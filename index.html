@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoCha Workshop | ECCV Workshop</title>
+    <meta
+      name="description"
+      content="Human Motion in Real-World and Clinical Settings: Benchmark and Challenge on Parkinsonian Gait."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="home">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-lockup">
+          <a class="brand" href="#home">MoCha Workshop</a>
+          <!-- <p class="brand-tag">where motion meets complexity</p> -->
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <!-- <a href="#about">About</a> -->
+          <a href="#home">Home</a>
+          <!-- <a href="#topics">Topics</a> -->
+          <a href="#challenge">Challenge</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="#papers">Call for Papers</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#speakers">Speakers</a>
+          <a href="#organizers">Organizers</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <div class="conference-logo-wrap" aria-label="Conference logo">
+        <img
+          class="conference-logo"
+          src="assets/ECCV_2026_Logo.svg"
+          alt="ECCV 2026 logo"
+        />
+      </div>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-title-block">
+            <h1>
+              <span class="hero-title-main">
+                Human
+                <span class="hero-acronym hero-acronym-mo">Mo</span>tion
+                <span class="hero-acronym hero-acronym-cha">Cha</span>llenges
+              </span>
+              <span class="hero-title-sub">in Real-World and Clinical Settings</span>
+            </h1>
+            <!-- <p class="eyebrow2">MoCha @ ECCV 2026</p> -->
+            <div class="hero-meta-wrap" aria-label="Workshop logistics">
+              <img
+                class="hero-meta-logo"
+                src="assets/Mocha_nobgg.png"
+                alt="MoCha logo"
+              />
+              <div class="hero-meta-inline">
+                <p>MoCha @ ECCV 2026</p>
+                <p>Malmö, Sweden</p>
+                <p>Room: TBD</p>
+                <p>Date: TBDD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-copy">
+            <p class="hero-subtitle">
+              + Benchmark and Challenge on Parkinsonian Gait
+            </p>
+            <p class="hero-text">
+              A focused forum on human motion understanding under realistic
+              constraints, bridging computer vision, biomechanics, digital
+              health, and clinically grounded evaluation.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#challenge">View Challenge</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <!-- <div class="panel-card spotlight-card">
+              <p class="card-label">Workshop focus</p>
+              <ul class="spotlight-list">
+                <li>Robust human motion understanding in the wild</li>
+                <li>Clinical gait analysis and motion biomarkers</li>
+                <li>Benchmarking under dataset shift</li>
+                <li>Privacy-preserving 3D human representations</li>
+              </ul>
+            </div> -->
+            <div class="panel-card status-card">
+              <p class="card-label">Important dates</p>
+              <p>
+                <strong>Submission deadline:</strong> [TBD] <br />
+                <strong>Notification date:</strong> [TBD] <br />
+                <strong>Camera-ready deadline:</strong> [TBD]
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <section id="about" class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">About</p> -->
+            <h2>About</h2>
+            <!-- <h2>Why this workshop</h2> -->
+          </div>
+          <!-- <div class="two-column"> -->
+            <div>
+            <div class="rich-copy">
+              <p>
+                Human motion understanding is central to computer vision, yet
+                many models still degrade when motion patterns diverge from the
+                curated distributions seen in standard benchmarks. These gaps
+                become even more important in clinical settings, where subtle
+                movement deviations can carry meaningful diagnostic value.
+              </p>
+              <p>
+                This workshop creates a meeting point for researchers working on
+                human-centric vision, long-term motion understanding, robust
+                evaluation, and clinically grounded modeling. The goal is to
+                push the field beyond controlled benchmarks toward methods that
+                remain reliable under real-world constraints.
+              </p>
+            </div>
+            <!-- <div class="info-card">
+              <h3>What the program includes</h3>
+              <ul class="check-list">
+                <li>Invited talks from leading researchers in 3D human modeling</li>
+                <li>Peer-reviewed paper and extended abstract presentations</li>
+                <li>Benchmark-driven challenge based on CARE-PD</li>
+                <li>Poster session with in-person and virtual participation</li>
+              </ul>
+            </div> -->
+          </div>
+          <div class="info-card topic-bullets-card">
+            <h3>Topics include:</h3>
+            <ul class="check-list">
+              <li>3D pose and mesh reconstruction in unconstrained environments</li>
+              <li>Long-term and longitudinal human motion understanding</li>
+              <li>Efficient parametric human representations</li>
+              <li>Motion representation learning and generative modeling</li>
+              <li>Privacy-preserving human motion modeling in real-world contexts</li>
+              <li>Learning under domain shift and cross-site generalization</li>
+              <li>Fairness, reproducibility, generalization, and bias in human motion models</li>
+              <li>Benchmark design for real-world human motion understanding</li>
+              <li>Gait analysis and kinematic modeling</li>
+              <li>Musculoskeletal and muscle-actuated humanoid modeling</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- <section id="topics" class="content-section section-tint">
+          <div class="section-heading">
+            <p class="eyebrow">Topics of interest</p>
+            <h2>Topics of interest</h2>
+          </div>
+          <ul class="check-list">
+              <li>3D pose and mesh reconstruction in unconstrained environments</li>
+              <li>Long-term and longitudinal human motion understanding</li>
+              <li>Efficient parametric human representations</li>
+              <li>Motion representation learning and generative modeling</li>
+              <li>Privacy-preserving human motion modeling in real-world contexts</li>
+              <li>Learning under domain shift and cross-site generalization</li>
+              <li>Fairness, reproducibility, generalization, and bias in human motion models</li>
+              <li>Benchmark design for real-world human motion understanding</li>
+              <li>Gait analysis and kinematic modeling</li>
+              <li>Musculoskeletal and muscle-actuated humanoid modeling</li>
+            </ul>
+          <div class="topic-grid">
+            <article class="topic-card">
+              <h3>3D human modeling</h3>
+              <p>
+                3D pose and mesh reconstruction in unconstrained environments,
+                efficient parametric human representations, and scalable 3D/4D
+                modeling pipelines.
+              </p>
+            </article>
+            <article class="topic-card">
+              <h3>Motion learning</h3>
+              <p>
+                Motion representation learning, generative modeling,
+                longitudinal motion understanding, and clinically meaningful
+                sequence analysis.
+              </p>
+            </article>
+            <article class="topic-card">
+              <h3>Robustness in the wild</h3>
+              <p>
+                Learning under domain shift, cross-site generalization,
+                fairness, reproducibility, bias, and benchmark design for
+                real-world motion understanding.
+              </p>
+            </article>
+            <article class="topic-card">
+              <h3>Clinical deployment</h3>
+              <p>
+                Gait analysis, kinematic modeling, musculoskeletal reasoning,
+                motion biomarkers, and privacy-preserving human motion methods
+                for healthcare settings.
+              </p>
+            </article> 
+          </div>
+        </section> -->
+
+
+        <section id="challenge" class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Benchmark &amp; Challenge</p> -->
+            <h2>Benchmark &amp; Challenge</h2>
+            <!-- <h2>CARE-PD at the center</h2> -->
+          </div>
+          <div class="two-column challenge-layout">
+            <div class="rich-copy">
+              <p>
+                The workshop is paired with a benchmark and challenge on
+                Parkinsonian gait built on
+                <strong>CARE-PD</strong>, a large harmonized dataset of
+                anonymized SMPL mesh gait sequences aggregated across nine
+                cohorts and clinical centers.
+              </p>
+              <p>
+                The proposed challenge uses CARE-PD as training data and
+                evaluates performance on harmonized test sequences from three
+                additional unseen sites. This setup is designed to reward
+                methods that remain robust to real-world distribution shift and
+                clinically realistic variability.
+              </p>
+              
+            </div>
+            <div class="info-card">
+              <h3>Challenge important dates:</h3>
+              <ul class="check-list">
+                <li>Start of the public benchmark: TBD</li>
+                <li>Close of the public benchmark: TBD</li>
+              </ul>
+              <p>(The benchmark will continue to be available for evaluation after this date, but the results will not be considered for the workshop.)</p>
+              <div class="hero-actions">
+              <a class="button button-primary" href="leaderboard.html">Participate</a>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="content-section section-tint">
+          <div class="section-heading">
+            <p class="eyebrow">Format</p>
+            <h2>Half-day hybrid program</h2>
+          </div>
+          <div class="format-grid">
+            <article class="format-card">
+              <h3>Talks and presentations</h3>
+              <p>
+                Five invited talks, benchmark winners, best paper presentation,
+                and selected oral highlights.
+              </p>
+            </article>
+            <article class="format-card">
+              <h3>Poster session</h3>
+              <p>
+                In-person posters alongside virtual poster participation to make
+                the workshop more accessible.
+              </p>
+            </article>
+            <article class="format-card">
+              <h3>Community scale</h3>
+              <p>
+                An intentionally focused workshop with an expected size below
+                one hundred attendees.
+              </p>
+            </article>
+          </div>
+        </section> -->
+
+        
+
+        <section id="speakers" class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Invited Speakers</p> -->
+            <h2>Invited Speakers</h2>
+          </div>
+          <div class="speaker-gallery">
+            <div class="speaker-person">
+              <img
+                class="person-photo"
+                src="assets/Gerard_Pons-Moll.jpg"
+                alt="Portrait of Gerard Pons-Moll"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Gerard Pons-Moll</a
+                >
+              </h3>
+              <p class="person-role">University of Tübingen</p>
+            </div>
+            <div class="speaker-person">
+              <img
+                class="person-photo"
+                src="assets/siyu_tang.jpg"
+                alt="Portrait of Siyu Tang"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Siyu Tang</a
+                >
+              </h3>
+              <p class="person-role">ETH Zürich</p>
+            </div>
+            <div class="speaker-person">
+              <img
+                class="person-photo"
+                src="assets/Fabien_Baradel.png"
+                alt="Portrait of Fabien Baradel"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://fabienbaradel.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Fabien Baradel</a
+                >
+              </h3>
+              <p class="person-role">NAVER LABS Europe</p>
+            </div>
+            <div class="speaker-person">
+              <img
+                class="person-photo"
+                src="assets/javier_romero.jpg"
+                alt="Portrait of Javier Romero"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://scholar.google.ca/citations?hl=en&user=Wx62iOsAAAAJ&view_op=list_works&sortby=pubdate"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Javier Romero</a
+                >
+              </h3>
+              <p class="person-role">Reality Labs Research, Meta</p>
+            </div>
+            <div class="speaker-person">
+              <img
+                class="person-photo"
+                src="assets/james_cotton.png"
+                alt="Portrait of R. James Cotton"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://www.sralab.org/researchers/r-james-cotton-md-phd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >R. James Cotton</a
+                >
+              </h3>
+              <p class="person-role">
+                Northwestern University &amp; Shirley Ryan AbilityLab
+              </p>
+            </div>
+            <div class="speaker-person">
+              <img
+                class="person-photo"
+                src="assets/ehsan_adeli.jpg"
+                alt="Portrait of Ehsan Adeli"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://stanford.edu/~eadeli/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ehsan Adeli</a
+                >
+              </h3>
+              <p class="person-role">Stanford University</p>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section id="papers" class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Call for Papers</p>/ -->
+            <h2>Call for Papers</h2>
+          </div>
+          <div class="two-column">
+            <div class="rich-copy">
+              <p>
+                We invite submissions on human motion understanding under
+                realistic and clinically grounded conditions, spanning computer
+                vision, biomechanics, digital health, and robust evaluation.
+                The workshop welcomes work on both methodological advances and
+                deployment-aware analysis.
+              </p>
+              <p>
+                Submissions aligned with the workshop theme will be peer
+                reviewed by a program committee composed of the organizers and
+                researchers with expertise in human-centric vision. A best paper
+                will be selected and highlighted during the workshop.
+              </p>
+              <p>
+                Relevant topics include 3D pose and mesh reconstruction in the
+                wild, motion representation learning, domain shift and cross-site
+                generalization, gait analysis, motion biomarkers, fairness and
+                bias in motion models, benchmark design, and privacy-preserving
+                human representations for healthcare settings.
+              </p>
+            </div>
+            <div class="stacked-cards">
+              <div class="info-card">
+                <h3>Submission types</h3>
+                <ul class="check-list">
+                  <li>Full papers</li>
+                  <li>Extended abstracts</li>
+                  <li>Poster presentations</li>
+                  <!-- <li>Selected oral highlights</li> -->
+                </ul>
+                <div class="hero-actions">
+                  <a class="button button-primary" href="#home">Submit</a>
+                </div>
+              </div>
+              <div class="info-card">
+                <h3>Important dates</h3>
+                <ul class="check-list">
+                  <li>Submission deadline: [TBD]</li>
+                  <li>Notification date: [TBD]</li>
+                  <li>Camera-ready deadline: [TBD]</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="schedule" class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Schedule</p> -->
+            <h2>Schedule</h2>
+          </div>
+          <div class="schedule-table" role="table" aria-label="Tentative workshop schedule">
+            <div class="schedule-row schedule-head" role="row">
+              <span role="columnheader">Time</span>
+              <span role="columnheader">Session</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">08:30-08:40</span>
+              <span role="cell">Welcome &amp; Introduction</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">08:40-09:10</span>
+              <span role="cell">Invited Talk 1</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">09:10-09:40</span>
+              <span role="cell">Invited Talk 2</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">09:40-10:10</span>
+              <span role="cell">Invited Talk 3</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">10:10-10:30</span>
+              <span role="cell">CARE-PD Dataset and Challenge Overview</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">10:30-11:00</span>
+              <span role="cell">Coffee Break and Poster Session</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">11:00-11:30</span>
+              <span role="cell">Invited Talk 4</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">11:30-12:00</span>
+              <span role="cell">Challenge Winners and Best Paper Presentation</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">12:00-12:30</span>
+              <span role="cell">Invited Talk 5</span>
+            </div>
+            <div class="schedule-row" role="row">
+              <span role="cell">12:30-12:45</span>
+              <span role="cell">Final Remarks &amp; Awards</span>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="organizers" class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Organizers</p> -->
+            <h2>Organizers</h2>
+          </div>
+          <!-- <div class="organizer-grid">
+            <article class="organizer-card">
+              <h3>Lead organizers</h3>
+              <ul>
+                <li>Vida Adeli — University of Toronto, Vector Institute, KITE-UHN</li>
+                <li>Kimia Shaban — University of Toronto, Vector Institute, KITE-UHN</li>
+                <li>Babak Taati — University of Toronto, Vector Institute, KITE-UHN</li>
+                <li>Ehsan Adeli — Stanford University</li>
+              </ul>
+            </article>
+            <article class="organizer-card">
+              <h3>3D human modeling</h3>
+              <ul>
+                <li>Hamid Rezatofighi — Monash University</li>
+                <li>Georgios Pavlakos — The University of Texas at Austin</li>
+                <li>Youngjoong Kwon — Emory University</li>
+                <li>Hyewon Seo — Université de Strasbourg</li>
+                <li>Majid Mirmehdi — University of Bristol</li>
+              </ul>
+            </article>
+            <article class="organizer-card">
+              <h3>Clinical and biomechanics expertise</h3>
+              <ul>
+                <li>Diego Guarin — University of Florida</li>
+                <li>Andrea Iaboni — University of Toronto</li>
+                <li>Martin McKeown — University of British Columbia</li>
+                <li>Maryam Mirian — University of British Columbia</li>
+                <li>Eni Halilaj — Carnegie Mellon University</li>
+              </ul>
+            </article>
+          </div> -->
+          <div class="featured-people-grid">
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/vida_adeli.png"
+                alt="Portrait of Vida Adeli"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://vadeli.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Vida Adeli</a
+                >
+              </h3>
+              <p class="person-role">University of Toronto</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/kimia_shaban.jpg"
+                alt="Portrait of Kimia Shaban"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://kimiashaban.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Kimia Shaban</a
+                >
+              </h3>
+              <p class="person-role">University of Toronto</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/Babak_Taati.jpg"
+                alt="Portrait of Babak Taati"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://www.cs.toronto.edu/~taati/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Babak Taati</a
+                >
+              </h3>
+              <p class="person-role">University of Toronto</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/ehsan_adeli.jpg"
+                alt="Portrait of Ehsan Adeli"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://stanford.edu/~eadeli/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ehsan Adeli</a
+                >
+              </h3>
+              <p class="person-role">Stanford University</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/hamid_rezatofighi.jpg"
+                alt="Portrait of Hamid Rezatofighi"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://vl4ai.erc.monash.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Hamid Rezatofighi</a
+                >
+              </h3>
+              <p class="person-role">Monash University</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/pavlakos_georgios.jpg"
+                alt="Portrait of Georgios Pavlakos"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://geopavlakos.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Georgios Pavlakos</a
+                >
+              </h3>
+              <p class="person-role">UT Austin</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/Hyewon_seo.jpg"
+                alt="Portrait of Hyewon Seo"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://seo-cnrs.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Hyewon Seo</a
+                >
+              </h3>
+              <p class="person-role">Université de Strasbourg</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/Youngjoong_Kwon.jpg"
+                alt="Portrait of Youngjoong Kwon"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://youngjoongunc.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youngjoong Kwon</a
+                >
+              </h3>
+              <p class="person-role">Emory University</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/majid_mirmehdi.jpg"
+                alt="Portrait of Majid Mirmehdi"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://majidmirmehdi.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Majid Mirmehdi</a
+                >
+              </h3>
+              <p class="person-role">University of Bristol</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/Andrea_iaboni.jpg"
+                alt="Portrait of Andrea Iaboni"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://rsi.utoronto.ca/faculty/andrea-iaboni"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Andrea Iaboni</a
+                >
+              </h3>
+              <p class="person-role">University of Toronto</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/Martin_McKeown.webp"
+                alt="Portrait of Martin McKeown"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://neurology.med.ubc.ca/faculty-listing/academic/martin-j-mckeown/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Martin McKeown</a
+                >
+              </h3>
+              <p class="person-role">University of British Columbia</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/Maryam_mirian.jpg"
+                alt="Portrait of Maryam Mirian"
+              />
+              <h3>Maryam Mirian</h3>
+              <p class="person-role">University of British Columbia</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/Guarin-Diego.webp"
+                alt="Portrait of Diego Guarin"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://hhp.ufl.edu/directory/diego-guarin/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Diego Guarin</a
+                >
+              </h3>
+              <p class="person-role">University of Florida</p>
+            </div>
+            <div class="featured-person">
+              <img
+                class="featured-person-photo"
+                src="assets/Eni_Halilaj.png"
+                alt="Portrait of Eni Halilaj"
+              />
+              <h3>
+                <a
+                  class="person-link"
+                  href="https://www.meche.engineering.cmu.edu/directory/bios/halilaj-eni.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Eni Halilaj</a
+                >
+              </h3>
+              <p class="person-role">Carnegie Mellon University</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="content-section section-tint">
+          <div class="section-heading">
+            <p class="eyebrow">Inclusion</p>
+            <h2>Diversity and community values</h2>
+          </div>
+          <div class="rich-copy">
+            <p>
+              The workshop is designed to connect methodological and
+              translational communities across computer vision, machine
+              learning, biomechanics, hospitals, clinical research centers, and
+              industry. The organizing committee spans multiple career stages
+              and disciplinary backgrounds, and the program is structured to
+              support engagement from students and early-career researchers.
+            </p>
+          </div>
+        </section> -->
+
+        <section class="content-section">
+          <div class="section-heading">
+            <h2>Program Committee</h2>
+          </div>
+          <div class="info-card">
+            <ul class="check-list">
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Relevant Previous Workshops</p> -->
+            <h2>Relevant Previous Workshops</h2>
+          </div>
+          <div class="info-card">
+            <ul class="check-list">
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="contact" class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Contact</p> -->
+            <h2>Contact Information</h2>
+          </div>
+          <div class="contact-card">
+            <p>
+              This website draft is ready for you to customize with the final
+              public-facing workshop details.
+            </p>
+            <ul class="check-list">
+              <li>Exact ECCV workshop date and room</li>
+              <li>Workshop logo or hero visual</li>
+              <li>Submission information and deadlines</li>
+              <li>Contact email and sponsor logos</li>
+            </ul>
+            <p class="contact-note">
+              Replace this block with the final contact email, submission link,
+              and sponsor details when they are ready.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
