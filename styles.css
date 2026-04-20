@@ -771,10 +771,34 @@ li {
     radial-gradient(circle at top left, rgba(47, 127, 118, 0.16), transparent 25%);
 }
 
+.contact-band {
+  width: 100%;
+  padding: 28px 32px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(160deg, rgba(255, 250, 242, 0.9), rgba(255, 248, 240, 0.82)),
+    radial-gradient(circle at top left, rgba(47, 127, 118, 0.14), transparent 24%);
+}
+
 .contact-note {
   margin: 0;
   font-weight: 700;
   color: var(--accent-dark);
+}
+
+.contact-sponsor-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-sponsor-placeholder {
+  display: block;
+  width: min(100%, 220px);
+  height: auto;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1080px) {
@@ -865,6 +889,10 @@ li {
 
   .hero-title-main {
     white-space: normal;
+  }
+
+  .contact-band {
+    padding: 20px;
   }
 
   .hero-meta-wrap {
