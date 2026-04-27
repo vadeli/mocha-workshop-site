@@ -821,6 +821,7 @@ li {
 .contact-band {
   width: 100%;
   padding: 28px 32px;
+  text-align: center;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background:
@@ -837,7 +838,9 @@ li {
 .contact-sponsor-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
+  margin-top: 12px;
   margin-bottom: 16px;
 }
 
