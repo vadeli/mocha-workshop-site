@@ -516,7 +516,12 @@ li {
 
 .centered-page-intro {
   margin-inline: auto;
+  justify-items: center;
   text-align: center;
+}
+
+.centered-page-intro .page-intro-copy {
+  width: 100%;
 }
 
 .centered-page-intro .page-description {
