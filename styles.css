@@ -47,6 +47,26 @@ a {
   text-decoration: none;
 }
 
+.content-section a:not(.button):not(.person-link),
+.page-intro a:not(.button):not(.person-link) {
+  color: var(--accent-dark);
+  text-decoration-line: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+.content-section a:not(.button):not(.person-link):hover,
+.content-section a:not(.button):not(.person-link):focus-visible,
+.page-intro a:not(.button):not(.person-link):hover,
+.page-intro a:not(.button):not(.person-link):focus-visible {
+  color: var(--accent-dark2);
+  text-decoration-color: var(--accent);
+}
+
 p,
 li {
   color: var(--muted);
@@ -461,6 +481,10 @@ li {
   margin-bottom: 24px;
 }
 
+.submission-guidelines-heading {
+  margin-top: 34px;
+}
+
 .section-heading h2 {
   font-size: clamp(1.45rem, 2.3vw, 2.1rem);
 }
@@ -483,6 +507,24 @@ li {
   gap: 28px;
   align-items: start;
   padding: 18px 0 10px;
+}
+
+.simple-page-intro {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 760px;
+}
+
+.centered-page-intro {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.centered-page-intro .page-description {
+  margin-inline: auto;
+}
+
+.centered-page-intro .hero-actions {
+  justify-content: center;
 }
 
 .page-title {
@@ -821,6 +863,10 @@ li {
   .organizer-grid,
   .format-grid {
     gap: 16px;
+  }
+
+  .simple-page-intro {
+    grid-template-columns: 1fr;
   }
 
   .hero-meta {

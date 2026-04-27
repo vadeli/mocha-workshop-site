@@ -75,7 +75,7 @@
                 <p>MoCha @ ECCV 2026</p>
                 <p>Malmö, Sweden</p>
                 <p>Room: TBD</p>
-                <p>Date: TBDD</p>
+                <p>Date: TBD</p>
               </div>
             </div>
           </div>
@@ -107,9 +107,14 @@
             <div class="panel-card status-card">
               <p class="card-label">Important dates</p>
               <p>
-                <strong>Submission deadline:</strong> [TBD] <br />
-                <strong>Notification date:</strong> [TBD] <br />
-                <strong>Camera-ready deadline:</strong> [TBD]
+                <strong>Challenge submissions starts:</strong> May 20 <br />
+                <strong>Challenge submission ends:</strong> August 15 <br />
+                <br />
+                <strong>Paper submissions deadlines:</strong> <br />
+                <ul class="check-list">
+                  <li><strong>Proceedings track:</strong> June 24</li>
+                  <li><strong>Non-proceedings track:</strong> July 17</li>
+                </ul>
               </p>
             </div>
           </aside>
@@ -222,33 +227,59 @@
             <h2>Benchmark &amp; Challenge</h2>
             <!-- <h2>CARE-PD at the center</h2> -->
           </div>
-          <div class="two-column challenge-layout">
             <div class="rich-copy">
               <p>
                 The workshop is paired with a benchmark and challenge on
-                Parkinsonian gait built on
-                <strong>CARE-PD</strong>, a large harmonized dataset of
+                Parkinsonian gait built on <a href="https://neurips2025.care-pd.ca/"><strong>CARE-PD</strong></a>, a large harmonized dataset of
                 anonymized SMPL mesh gait sequences aggregated across nine
                 cohorts and clinical centers.
-              </p>
-              <p>
                 The proposed challenge uses CARE-PD as training data and
                 evaluates performance on harmonized test sequences from three
                 additional unseen sites. This setup is designed to reward
                 methods that remain robust to real-world distribution shift and
                 clinically realistic variability.
               </p>
-              
-            </div>
+              </div>
+              <h3>Submission</h3>
+              <div class="two-column challenge-layout">
+              <ul class="check-list">
+              <li>
+                Submissions to the challenge will be evaluated by submitting to
+                the MoCha competition website (link to be announced).
+                Entries will be ranked based on their performance on an unseen
+                test set, using the Macro-F1 score as the primary evaluation
+                metric. The top-performing teams will be selected according to
+                the leaderboard rankings. The winners of the challenge have an
+                opportunity to present their work as a spotlight and poster
+                presentation during the workshop.
+              </li>
+              <li>
+                Participants in the challenge may also submit a corresponding
+                paper; however, all paper submissions must adhere to the
+                official <strong>workshop paper submission deadlines</strong>. The challenge
+                leaderboard submission will remain open for competition entries
+                until the designated <strong>competition deadline</strong>.
+              </li>
+              <li>
+                One <strong>First Place Award (&euro;1,000)</strong> and one <strong>Runner-Up Award
+                (&euro;500)</strong>, generously sponsored by
+                <a href="https://machinemedicine.io/en/">Machine Medicine Technologies</a>,
+                will be granted to the top-performing teams.
+              </li>
+              <li>For participation instruction details see <a href="challenge.html">this page</a>.</li>
+            </ul>
+            
             <div class="info-card">
               <h3>Challenge important dates:</h3>
               <ul class="check-list">
-                <li>Start of the public benchmark: TBD</li>
-                <li>Close of the public benchmark: TBD</li>
+                <li>CARE-PD data has already been released for model development and training here</li>
+                <li>Challenge leaderboard submission opens: <strong>May 20</strong></li>
+                <li>Challenge leaderboard submission closes: <strong>August 15</strong></li>
+                <li>Winner announcement on website: <strong>August 18</strong></li>
               </ul>
-              <p>(The benchmark will continue to be available for evaluation after this date, but the results will not be considered for the workshop.)</p>
+              <!-- <p>(The benchmark will continue to be available for evaluation after this date, but the results will not be considered for the workshop.)</p> -->
               <div class="hero-actions">
-              <a class="button button-primary" href="leaderboard.html">Participate</a>
+              <a class="button button-primary" href="challenge.html">Participate</a>
             </div>
             </div>
           </div>
@@ -406,53 +437,86 @@
             <!-- <p class="eyebrow">Call for Papers</p>/ -->
             <h2>Call for Papers</h2>
           </div>
-          <div class="two-column">
             <div class="rich-copy">
-              <p>
-                We invite submissions on human motion understanding under
-                realistic and clinically grounded conditions, spanning computer
-                vision, biomechanics, digital health, and robust evaluation.
-                The workshop welcomes work on both methodological advances and
-                deployment-aware analysis.
-              </p>
-              <p>
-                Submissions aligned with the workshop theme will be peer
-                reviewed by a program committee composed of the organizers and
-                researchers with expertise in human-centric vision. A best paper
-                will be selected and highlighted during the workshop.
-              </p>
-              <p>
-                Relevant topics include 3D pose and mesh reconstruction in the
-                wild, motion representation learning, domain shift and cross-site
-                generalization, gait analysis, motion biomarkers, fairness and
-                bias in motion models, benchmark design, and privacy-preserving
-                human representations for healthcare settings.
-              </p>
+              <p>We invite <strong>Full Paper</strong>, <strong>Short Paper</strong> and <strong>Extended Abstract</strong> submissions. The covered topics include, but are not limited to:</p>
+              <ul class="check-list">
+                <li>3D human pose, and mesh modeling in unconstrained environments</li>
+                <li>Human motion understanding in real-world and in-the-wild settings</li>
+                <li>Long-term, temporal, and longitudinal motion modeling</li>
+                <li>Motion representation learning and generative modeling</li>
+                <li>Benchmark design and evaluation for real-world motion understanding</li>
+                <li>Gait analysis, motion biomarkers, and clinical motion modeling</li>
+                <li>Human motion for healthcare, rehabilitation, and assistive technologies</li>
+              </ul>
             </div>
-            <div class="stacked-cards">
+
+            <h3>Submission Track 1: Proceedings Track (Full paper only)</h3>
+            <div class="two-column">
+              <div>
+                <p>
+                 We accept novel full papers for publication in the proceedings. </p> 
+                 <p> Full papers are limited to <strong>14 pages</strong>, including figures and tables, <strong>in the ECCV style</strong>. Additional pages containing only cited references are allowed. Appendices are counted towards the eight-page limit or should be moved to the supplementary document. </p> 
+                 <p> The accepted full-paper submissions will appear in the ECCV workshops proceedings. Accepted papers will be invited for poster/oral presentation and will be displayed on the workshop website.</p> 
+              </p>
+              </div>
               <div class="info-card">
-                <h3>Submission types</h3>
+                <h3>Important dates (Track 1)</h3>
                 <ul class="check-list">
-                  <li>Full papers</li>
-                  <li>Short papers</li>
-                  <li>Extended abstracts</li>
-                  <!-- <li>Poster presentations</li> -->
-                  <!-- <li>Selected oral highlights</li> -->
+                  <li>Submission deadline: <strong>June 24</strong></li>
+                  <li>Notification date: <strong>July 7</strong></li>
+                  <li>Camera-ready deadline: <strong>July 17</strong></li>
                 </ul>
                 <div class="hero-actions">
                   <a class="button button-primary" href="#home">Submit</a>
                 </div>
               </div>
+            </div>
+            <br />
+            <h3>Submission Track 2: Non-Proceedings Track (Full paper - Short paper - Extended abstract)</h3>
+            <div class="two-column">
+              <div>
+              <p>The <strong>Non-Proceedings Track</strong> provides a flexible venue for presenting a broad range of work in a non-archival format. </p>
+                  <p> We invite submissions of extended abstracts <strong>(2–4 pages)</strong>, short papers <strong>(4–7 pages)</strong>, and full papers <strong>(up to 14 pages)</strong>. Submissions may include <strong>novel or previously published work</strong> and should follow the ECCV style. </p>
+                  <p>Accepted submissions will <strong>NOT</strong> be included in the ECCV workshop proceedings, but will be invited for poster/spotlight presentation and will be displayed on the workshop website.</p>
+              </div>
               <div class="info-card">
-                <h3>Important dates</h3>
+                <h3>Important dates (Track 2)</h3>
                 <ul class="check-list">
-                  <li>Submission deadline: [TBD]</li>
-                  <li>Notification date: [TBD]</li>
-                  <li>Camera-ready deadline: [TBD]</li>
+                  <li>Submission deadline: <strong>July 17</strong></li>
+                  <li>Notification date: <strong>August 3</strong></li>
+                  <li>Camera-ready deadline: <strong>August 14</strong></li>
                 </ul>
+                <div class="hero-actions">
+                  <a class="button button-primary" href="#home">Submit</a>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="section-heading submission-guidelines-heading">
+              <h3>Submission Guidelines</h3>
+            </div>
+            <div class="rich-copy">
+              <ul class="check-list">
+                <li>All papers must be submitted via the ECCV 2025 OpenReview workshop website.</li>
+                <li>
+                  Submissions should be PDF format and follow the official
+                  <a href="https://www.overleaf.com/project/6964f03143335b20390feb46">ECCV 2026 Author Kit</a>
+                  and
+                  <a href="https://eccv.ecva.net/Conferences/2026/SubmissionPolicies">ECCV 2026 author guidelines</a>.
+                </li>
+                <li>The reviewing process is single-stage without rebuttals.</li>
+                <li>Authors may upload optional supplementary materials, containing additional details, videos, images, etc.</li>
+                <li>Papers should follow the ECCV author guidelines and be anonymized for double-blind review.</li>
+                <li>The accepted papers will be presented as oral, or poster presentations.</li>
+                <li>
+                  A <strong>Best Paper Award (&euro;500)</strong>, generously sponsored by
+                  <a href="https://machinemedicine.io/en/">Machine Medicine Technologies</a>,
+                  will be granted to the most outstanding contributions,
+                  selected based on originality, technical merit, and potential
+                  impact from the accepted papers.
+                </li>
+              </ul>
+            </div>
+          
         </section>
 
 
@@ -801,7 +865,7 @@
           </div>
         </section> -->
 
-        <section class="content-section">
+        <!-- <section class="content-section">
           <div class="section-heading">
             <h2>Program Committee</h2>
           </div>
@@ -812,11 +876,10 @@
               <li>TBD</li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
-        <section class="content-section">
+        <!-- <section class="content-section">
           <div class="section-heading">
-            <!-- <p class="eyebrow">Relevant Previous Workshops</p> -->
             <h2>Relevant Previous Workshops</h2>
           </div>
           <div class="info-card">
@@ -826,7 +889,7 @@
               <li>TBD</li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
         <section id="contact" class="content-section">
           <div class="section-heading">
@@ -834,6 +897,7 @@
             <!-- <h2>Contact Information</h2> -->
           </div>
           <div class="contact-band">
+            <p class="contact-note">Sponsored by</p>
             <div class="contact-sponsor-row">
               <img
                 class="contact-sponsor-placeholder"
@@ -847,8 +911,7 @@
               />
             </div>
             <p class="contact-note">
-              Replace this block with the final contact email, submission link,
-              and sponsor details when they are ready.
+              Contact: <a href="mailto:mocha.eccv@gmail.com">mocha.eccv@gmail.com</a>
             </p>
           </div>
         </section>
