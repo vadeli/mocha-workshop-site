@@ -440,6 +440,15 @@ li {
   color: #f6d49b;
 }
 
+.dates-note {
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgba(247, 241, 231, 0.7);
+}
+
 .spotlight-list,
 .check-list,
 .organizer-card ul {
