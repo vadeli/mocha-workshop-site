@@ -113,17 +113,66 @@
               <p>
                 <strong>Challenge submissions start:</strong> May 31 <br />
                 <strong>Challenge submission ends:</strong> August 15 <br />
-                <p class="dates-note">Information on challenge submission instructions will be coming very soon.</p>
+                <!-- <p class="dates-note">Information on challenge submission instructions will be coming very soon.</p> -->
                 <br />
                 <strong>Paper submission deadlines:</strong> <br />
                 <ul class="check-list">
                   <li><strong>Proceedings track:</strong> July 1 </li>
-                  <li><strong>Non-proceedings track:</strong> TBA </li>
+                  <li><strong>Non-proceedings track:</strong> July 23 </li>
                 </ul>
               </p>
               <p class="dates-note">All deadlines are end-of-day Anywhere on Earth (AOE).</p>
             </div>
           </aside>
+        </section>
+
+        <section id="timeline" class="content-section process-timeline-section">
+          <div
+            class="timeline-band"
+            data-timeline
+            data-start="2026-05-31"
+            data-end="2026-09-08"
+          >
+            <div class="timeline-summary">
+              <h2>Timeline</h2>
+            </div>
+            <div class="timeline-visual" aria-label="Workshop timeline milestones">
+              <div class="timeline-rail" aria-hidden="true">
+                <div class="timeline-rail-fill" data-timeline-fill></div>
+                <div class="timeline-now-marker" data-timeline-now>
+                  <span class="timeline-now-arrow"></span>
+                  <span class="timeline-now-label">Now</span>
+                </div>
+              </div>
+              <ol class="timeline-steps">
+                <li class="timeline-step" data-date="2026-05-31">
+                  <span class="timeline-step-marker"></span>
+                  <span class="timeline-step-title">Challenge opens</span>
+                  <time class="timeline-step-date" datetime="2026-05-31">May 31</time>
+                </li>
+                <li class="timeline-step" data-date="2026-07-01">
+                  <span class="timeline-step-marker"></span>
+                  <span class="timeline-step-title">Proceedings deadline</span>
+                  <time class="timeline-step-date" datetime="2026-07-01">Jul 1</time>
+                </li>
+                <li class="timeline-step" data-date="2026-07-23">
+                  <span class="timeline-step-marker"></span>
+                  <span class="timeline-step-title">Non-proceedings deadline</span>
+                  <time class="timeline-step-date" datetime="2026-07-23">Jul 23</time>
+                </li>
+                <li class="timeline-step" data-date="2026-08-15">
+                  <span class="timeline-step-marker"></span>
+                  <span class="timeline-step-title">Challenge closes</span>
+                  <time class="timeline-step-date" datetime="2026-08-15">Aug 15</time>
+                </li>
+                <li class="timeline-step" data-date="2026-09-08">
+                  <span class="timeline-step-marker"></span>
+                  <span class="timeline-step-title">ECCV workshop week</span>
+                  <time class="timeline-step-date" datetime="2026-09-08">Sep 8-13</time>
+                </li>
+              </ol>
+            </div>
+          </div>
         </section>
 
         <section id="about" class="content-section">
@@ -227,71 +276,7 @@
         </section> -->
 
 
-        <section id="challenge" class="content-section">
-          <div class="section-heading">
-            <!-- <p class="eyebrow">Benchmark &amp; Challenge</p> -->
-            <h2>Benchmark &amp; Challenge</h2>
-            <!-- <h2>CARE-PD at the center</h2> -->
-          </div>
-            <div class="rich-copy">
-              <p>
-                The workshop is paired with a benchmark and challenge on
-                Parkinsonian gait built on <a href="https://neurips2025.care-pd.ca/"><strong>CARE-PD</strong></a>, a large harmonized dataset of
-                anonymized SMPL mesh gait sequences aggregated across nine
-                cohorts and clinical centers.
-                The proposed challenge uses CARE-PD as training data and
-                evaluates performance on harmonized test sequences from three
-                additional unseen sites. This setup is designed to reward
-                methods that remain robust to real-world distribution shift and
-                clinically realistic variability.
-              </p>
-              </div>
-              <h3>Submission</h3>
-              <div class="two-column challenge-layout">
-              <ul class="check-list">
-              <li>
-                Submissions to the challenge will be evaluated by submitting to
-                the MoCha competition website (link to be announced).
-                Entries will be ranked based on their performance on an unseen
-                test set, using the Macro-F1 score as the primary evaluation
-                metric. The top-performing teams will be selected according to
-                the leaderboard rankings. The winners of the challenge have an
-                opportunity to present their work as a spotlight and poster
-                presentation during the workshop.
-              </li>
-              <li>
-                Participants in the challenge may also submit a corresponding
-                paper; however, all paper submissions must adhere to the
-                official <strong>workshop paper submission deadlines</strong>. The challenge
-                leaderboard submission will remain open for competition entries
-                until the designated <strong>competition deadline</strong>.
-              </li>
-              <li>
-                One <strong>First Place Award (&euro;1,000)</strong> and one <strong>Runner-Up Award
-                (&euro;500)</strong>, generously sponsored by
-                <a href="https://machinemedicine.io/en/">Machine Medicine Technologies</a>,
-                will be granted to the top-performing teams.
-              </li>
-              <li>For participation instruction details see <a href="challenge.html">this page</a>.</li>
-            </ul>
-            
-            <div class="info-card">
-              <h3>Challenge important dates:</h3>
-              <ul class="check-list">
-                <li>CARE-PD data has already been released for model development and training here</li>
-                <li>Challenge leaderboard submission opens: <strong>May 31</strong></li>
-                <li>Challenge leaderboard submission closes: <strong>August 15</strong></li>
-                <li>Winner announcement on website: <strong>August 18</strong></li>
-              </ul>
-              <p class="deadline-note">All deadlines are end-of-day Anywhere on Earth (AOE).</p>
-              <!-- <p>(The benchmark will continue to be available for evaluation after this date, but the results will not be considered for the workshop.)</p> -->
-              <div class="hero-actions">
-              <a class="button button-primary" href="challenge.html">Participate</a>
-            </div>
-            </div>
-          </div>
-        </section>
-
+        
         <!-- <section class="content-section section-tint">
           <div class="section-heading">
             <p class="eyebrow">Format</p>
@@ -438,6 +423,73 @@
         </section>
 
 
+        <section id="challenge" class="content-section">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Benchmark &amp; Challenge</p> -->
+            <h2>Benchmark &amp; Challenge</h2>
+            <!-- <h2>CARE-PD at the center</h2> -->
+          </div>
+            <div class="rich-copy">
+              <p>
+                The workshop is paired with a benchmark and challenge on
+                Parkinsonian gait built on <a href="https://neurips2025.care-pd.ca/"><strong>CARE-PD</strong></a>, a large harmonized dataset of
+                anonymized SMPL mesh gait sequences aggregated across nine
+                cohorts and clinical centers.
+                The proposed challenge uses CARE-PD as training data and
+                evaluates performance on harmonized test sequences from three
+                additional unseen sites. This setup is designed to reward
+                methods that remain robust to real-world distribution shift and
+                clinically realistic variability.
+              </p>
+              </div>
+              <h3>Submission</h3>
+              <div class="two-column challenge-layout">
+              <ul class="check-list">
+              <li>
+                Submissions to the challenge will be evaluated by submitting to
+                the MoCha competition website (link to be announced).
+                Entries will be ranked based on their performance on an unseen
+                test set, using the Macro-F1 score as the primary evaluation
+                metric. The top-performing teams will be selected according to
+                the leaderboard rankings. The winners of the challenge have an
+                opportunity to present their work as a spotlight and poster
+                presentation during the workshop.
+              </li>
+              <li>
+                Participants in the challenge may also submit a corresponding
+                paper; however, all paper submissions must adhere to the
+                official <strong>workshop paper submission deadlines</strong>. The challenge
+                leaderboard submission will remain open for competition entries
+                until the designated <strong>competition deadline</strong>.
+              </li>
+              <li>
+                One <strong>First Place Award (&euro;1,000)</strong> and one <strong>Runner-Up Award
+                (&euro;500)</strong>, generously sponsored by
+                <a href="https://machinemedicine.io/en/">Machine Medicine Technologies</a>,
+                will be granted to the top-performing teams.
+              </li>
+              <li>For participation instruction details see <a href="challenge.html">this page</a>.</li>
+            </ul>
+            
+            <div class="info-card">
+              <h3>Challenge important dates:</h3>
+              <ul class="check-list">
+                <li>CARE-PD data has already been released for model development and training here</li>
+                <li>Challenge leaderboard submission opens: <strong>May 31</strong></li>
+                <li>Challenge leaderboard submission closes: <strong>August 15</strong></li>
+                <li>Winner announcement on website: <strong>August 18</strong></li>
+              </ul>
+              <p class="deadline-note">All deadlines are end-of-day Anywhere on Earth (AOE).</p>
+              <!-- <p>(The benchmark will continue to be available for evaluation after this date, but the results will not be considered for the workshop.)</p> -->
+              <div class="hero-actions">
+              <a class="button button-primary" href="challenge.html">Participate</a>
+            </div>
+            </div>
+          </div>
+        </section>
+
+
+
 
         <section id="papers" class="content-section">
           <div class="section-heading">
@@ -472,11 +524,10 @@
                   <!-- <li>Submission deadline: <strong>June 24</strong></li>
                   <li>Notification date: <strong>July 7</strong></li>
                   <li>Camera-ready deadline: <strong>July 17</strong></li> -->
-                  <li>Submission deadline: <strong>July 1</strong></li>
-                  <li>Notification date: <strong>July 18</strong></li>
-                  <li>Camera-ready deadline: <strong>August 3</strong></li>
+                  <li>Submission deadline: <strong>July 1 </strong>(23:59 AOE)</strong></li>
+                  <li>Notification date: <strong>July 18 </strong>(23:59 AOE)</strong></li>
+                  <li>Camera-ready deadline: <strong>August 3 </strong>(23:59 AOE)</strong></li>
                 </ul>
-                <p class="deadline-note">All deadlines are end-of-day Anywhere on Earth (AOE).</p>
                 <div class="hero-actions">
                   <a class="button button-primary" href="https://openreview.net/group?id=thecvf.com/ECCV/2026/Workshop/MoCha" target="_blank" rel="noopener noreferrer">Submit</a>
                 </div>
@@ -496,9 +547,9 @@
                   <!-- <li>Submission deadline: <strong>July 17</strong></li>
                   <li>Notification date: <strong>August 3</strong></li>
                   <li>Camera-ready deadline: <strong>August 14</strong></li> -->
-                  <li>Submission deadline: <strong>TBA</strong></li>
-                  <li>Notification date: <strong>TBA</strong></li>
-                  <li>Camera-ready deadline: <strong>TBA</strong></li>
+                  <li>Submission deadline: <strong>July 23 </strong>(23:59 AOE)</strong></li>
+                  <li>Notification date: <strong>Aug 15 </strong>(23:59 AOE)</strong></li>
+                  <!-- <li>Camera-ready deadline: <strong>TBA</strong></li> -->
                 </ul>
                 <div class="hero-actions">
                   <a class="button button-primary" href="https://openreview.net/group?id=thecvf.com/ECCV/2026/Workshop/MoCha" target="_blank" rel="noopener noreferrer">Submit</a>
