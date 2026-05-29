@@ -26,8 +26,9 @@ if (timeline) {
   const fill = timeline.querySelector("[data-timeline-fill]");
   const nowMarker = timeline.querySelector("[data-timeline-now]");
   const steps = Array.from(timeline.querySelectorAll(".timeline-step"));
-  const start = new Date(`${timeline.dataset.start}T00:00:00`);
-  const end = new Date(`${timeline.dataset.end}T00:00:00`);
+  const stepDates = steps.map((step) => new Date(`${step.dataset.date}T00:00:00`));
+  const start = new Date(Math.min(...stepDates));
+  const end = new Date(Math.max(...stepDates));
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
@@ -40,7 +41,7 @@ if (timeline) {
   }
 
   if (nowMarker) {
-    nowMarker.style.left = `${progress}%`;
+    nowMarker.style.left = `clamp(0.75rem, ${progress}%, calc(100% - 0.75rem))`;
   }
 
   let currentIndex = steps.findIndex((step) => {

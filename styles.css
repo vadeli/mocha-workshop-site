@@ -595,7 +595,7 @@ li {
 
 .timeline-steps {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 10px;
   margin: 0;
   padding: 0;
@@ -1173,11 +1173,11 @@ li {
   }
 
   .timeline-rail {
-    min-width: 760px;
+    min-width: 860px;
   }
 
   .timeline-steps {
-    min-width: 760px;
+    min-width: 860px;
   }
 
   .prize-strip {
