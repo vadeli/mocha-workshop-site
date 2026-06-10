@@ -505,6 +505,12 @@ li {
   font-size: clamp(1.45rem, 2.3vw, 2.1rem);
 }
 
+.section-lede {
+  max-width: 62ch;
+  margin: 0;
+  font-size: 1.02rem;
+}
+
 .two-column {
   display: grid;
   grid-template-columns: 1.3fr 0.9fr;
@@ -763,6 +769,16 @@ li {
   border-radius: calc(var(--radius) + 4px);
 }
 
+.leaderboard-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: -8px 0 16px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
 .leaderboard-table-wrap {
   overflow-x: auto;
 }
@@ -770,7 +786,7 @@ li {
 .leaderboard-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 680px;
+  min-width: 760px;
 }
 
 .leaderboard-table th,
@@ -790,6 +806,53 @@ li {
 
 .leaderboard-table tbody tr:last-child td {
   border-bottom: 0;
+}
+
+.leaderboard-rank,
+.leaderboard-score {
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.leaderboard-rank-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leaderboard-rank-wrap .leaderboard-rank-text {
+  display: none;
+}
+
+.leaderboard-medal {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 999px;
+  font-size: 1.18rem;
+  line-height: 1;
+  box-shadow: 0 8px 18px rgba(31, 42, 37, 0.14);
+}
+
+.leaderboard-medal-gold {
+  background: rgba(201, 145, 45, 0.2);
+}
+
+.leaderboard-medal-silver {
+  background: rgba(95, 104, 95, 0.14);
+}
+
+.leaderboard-empty {
+  color: var(--muted);
+  text-align: center;
+}
+
+.leaderboard-updated {
+  margin: 14px 0 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--muted);
 }
 
 .leaderboard-pill {

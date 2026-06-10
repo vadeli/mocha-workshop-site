@@ -90,7 +90,20 @@
 
         <section class="content-section">
           <div class="section-heading">
-            <h2>Leaderboard Table</h2>
+            <h2>Leaderboard</h2>
+            <p class="section-lede">
+              Public CodaBench results are mirrored here and refreshed daily.
+            </p>
+          </div>
+          <div class="leaderboard-meta">
+            <span data-leaderboard-status>Loading latest CodaBench results...</span>
+            <a
+              href="https://www.codabench.org/competitions/16752/#/results-tab"
+              target="_blank"
+              rel="noopener"
+            >
+              Open CodaBench
+            </a>
           </div>
           <div class="leaderboard-card">
             <div class="leaderboard-table-wrap">
@@ -98,51 +111,25 @@
                 <thead>
                   <tr>
                     <th>Rank</th>
-                    <th>Team</th>
-                    <th>Affiliation</th>
-                    <th>Score</th>
-                    <th>Status</th>
+                    <th>Participant</th>
+                    <th>Macro F1</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>Accuracy</th>
+                    <th>QWK</th>
+                    <th>Submitted</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody data-leaderboard-body>
                   <tr>
-                    <td>1</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td><span class="leaderboard-pill">Coming soon</span></td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td><span class="leaderboard-pill">Coming soon</span></td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td><span class="leaderboard-pill">Coming soon</span></td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td><span class="leaderboard-pill">Coming soon</span></td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td><span class="leaderboard-pill">Coming soon</span></td>
+                    <td colspan="8">Loading leaderboard...</td>
                   </tr>
                 </tbody>
               </table>
             </div>
+            <p class="leaderboard-updated" data-leaderboard-updated>
+              Waiting for the latest refresh.
+            </p>
           </div>
         </section>
 <!-- 
