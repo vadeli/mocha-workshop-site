@@ -142,14 +142,14 @@
       "participant_url": "https://www.codabench.org/profiles/user/brady_kinesia/",
       "rank": 7,
       "scores": {
-        "accuracy": "0.52",
-        "macro_f1": "0.36",
+        "accuracy": "0.51",
+        "macro_f1": "0.35",
         "macro_precision": "0.35",
-        "macro_recall": "0.37",
+        "macro_recall": "0.36",
         "quadratic_weighted_kappa": "0.35"
       },
-      "submission_id": 792671,
-      "submitted_at": "2026-06-12T02:45:08.769461Z"
+      "submission_id": 793372,
+      "submitted_at": "2026-06-12T11:17:41.240431Z"
     },
     {
       "organization": null,
@@ -206,17 +206,17 @@
       "participant_url": "https://www.codabench.org/profiles/user/gwh6669999/",
       "rank": 11,
       "scores": {
-        "accuracy": "0.0",
-        "macro_f1": "0.0",
-        "macro_precision": "0.0",
-        "macro_recall": "0.0",
-        "quadratic_weighted_kappa": "0.0"
+        "accuracy": "0.41",
+        "macro_f1": "0.31",
+        "macro_precision": "0.41",
+        "macro_recall": "0.3",
+        "quadratic_weighted_kappa": "0.22"
       },
-      "submission_id": 790329,
-      "submitted_at": "2026-06-10T16:42:38.803303Z"
+      "submission_id": 793119,
+      "submitted_at": "2026-06-12T08:29:34.053732Z"
     }
   ],
-  "fetched_at": "2026-06-12T11:55:27+00:00",
+  "fetched_at": "2026-06-13T10:41:13+00:00",
   "phase_id": 27428,
   "source": "https://www.codabench.org/competitions/16752/#/results-tab",
   "title": "Results",
