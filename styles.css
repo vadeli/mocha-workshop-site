@@ -1163,11 +1163,23 @@ li {
   margin-bottom: 16px;
 }
 
+.contact-sponsor-row a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.contact-sponsor-row a:hover,
+.contact-sponsor-row a:focus-visible {
+  opacity: 0.85;
+}
+
 .contact-sponsor-placeholder {
   display: block;
   width: min(100%, 350px);
   height: auto;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 @media (max-width: 1080px) {
