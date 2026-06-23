@@ -24,40 +24,84 @@ navLinks.forEach((link) => {
 });
 
 if (timeline) {
+  const rail = timeline.querySelector(".timeline-rail");
   const fill = timeline.querySelector("[data-timeline-fill]");
   const nowMarker = timeline.querySelector("[data-timeline-now]");
   const steps = Array.from(timeline.querySelectorAll(".timeline-step"));
   const stepDates = steps.map((step) => new Date(`${step.dataset.date}T00:00:00`));
-  const start = new Date(Math.min(...stepDates));
-  const end = new Date(Math.max(...stepDates));
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const totalRange = Math.max(end - start, 1);
-  const elapsed = Math.min(Math.max(today - start, 0), totalRange);
-  const progress = (elapsed / totalRange) * 100;
+  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
-  if (fill) {
-    fill.style.width = `${progress}%`;
-  }
+  const getStepPositions = () => {
+    if (!rail) {
+      return steps.map((_, index) => (index / Math.max(steps.length - 1, 1)) * 100);
+    }
 
-  if (nowMarker) {
-    nowMarker.style.left = `clamp(0.75rem, ${progress}%, calc(100% - 0.75rem))`;
-  }
+    const railRect = rail.getBoundingClientRect();
+    if (!railRect.width) {
+      return steps.map((_, index) => (index / Math.max(steps.length - 1, 1)) * 100);
+    }
 
-  let currentIndex = steps.findIndex((step) => {
-    const stepDate = new Date(`${step.dataset.date}T00:00:00`);
-    return today <= stepDate;
-  });
+    return steps.map((step) => {
+      const marker = step.querySelector(".timeline-step-marker");
+      const markerRect = marker.getBoundingClientRect();
+      const markerCenter = markerRect.left + markerRect.width / 2;
 
-  if (currentIndex === -1) {
-    currentIndex = steps.length - 1;
-  }
+      return clamp(((markerCenter - railRect.left) / railRect.width) * 100, 0, 100);
+    });
+  };
 
-  steps.forEach((step, index) => {
+  const getTimelineProgress = (positions) => {
+    const firstDate = stepDates[0];
+    const lastDate = stepDates[stepDates.length - 1];
+
+    if (today <= firstDate) {
+      return positions[0] ?? 0;
+    }
+
+    if (today >= lastDate) {
+      return positions[positions.length - 1] ?? 100;
+    }
+
+    for (let index = 0; index < stepDates.length - 1; index += 1) {
+      const currentDate = stepDates[index];
+      const nextDate = stepDates[index + 1];
+
+      if (today <= nextDate) {
+        const localRange = Math.max(nextDate - currentDate, 1);
+        const localProgress = (today - currentDate) / localRange;
+        const currentPosition = positions[index] ?? 0;
+        const nextPosition = positions[index + 1] ?? 100;
+
+        return currentPosition + (nextPosition - currentPosition) * localProgress;
+      }
+    }
+
+    return positions[positions.length - 1] ?? 100;
+  };
+
+  const updateTimeline = () => {
+    const positions = getStepPositions();
+    const progress = getTimelineProgress(positions);
+
+    if (fill) {
+      fill.style.width = `${progress}%`;
+    }
+
+    if (nowMarker) {
+      nowMarker.style.left = `${progress}%`;
+    }
+  };
+
+  updateTimeline();
+  window.addEventListener("resize", updateTimeline);
+
+  steps.forEach((step) => {
     const stepDate = new Date(`${step.dataset.date}T00:00:00`);
     const isComplete = today > stepDate;
-    const isCurrent = index === currentIndex;
+    const isCurrent = today.getTime() === stepDate.getTime();
 
     step.classList.toggle("is-complete", isComplete);
     step.classList.toggle("is-current", isCurrent);
