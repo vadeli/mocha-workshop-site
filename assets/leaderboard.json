@@ -346,25 +346,9 @@
     {
       "organization": null,
       "organization_url": null,
-      "participant": "thecapybara",
-      "participant_url": "https://www.codabench.org/profiles/user/thecapybara/",
-      "rank": 20,
-      "scores": {
-        "accuracy": "0.52",
-        "macro_f1": "0.36",
-        "macro_precision": "0.36",
-        "macro_recall": "0.37",
-        "quadratic_weighted_kappa": "0.36"
-      },
-      "submission_id": 825474,
-      "submitted_at": "2026-07-03T05:53:57.772790Z"
-    },
-    {
-      "organization": null,
-      "organization_url": null,
       "participant": "willpoop",
       "participant_url": "https://www.codabench.org/profiles/user/willpoop/",
-      "rank": 21,
+      "rank": 20,
       "scores": {
         "accuracy": "0.43",
         "macro_f1": "0.36",
@@ -380,7 +364,7 @@
       "organization_url": null,
       "participant": "sifat371",
       "participant_url": "https://www.codabench.org/profiles/user/sifat371/",
-      "rank": 22,
+      "rank": 21,
       "scores": {
         "accuracy": "0.5",
         "macro_f1": "0.34",
@@ -396,7 +380,7 @@
       "organization_url": null,
       "participant": "govinuts",
       "participant_url": "https://www.codabench.org/profiles/user/govinuts/",
-      "rank": 23,
+      "rank": 22,
       "scores": {
         "accuracy": "0.44",
         "macro_f1": "0.34",
@@ -406,6 +390,22 @@
       },
       "submission_id": 796559,
       "submitted_at": "2026-06-14T11:04:11.423604Z"
+    },
+    {
+      "organization": null,
+      "organization_url": null,
+      "participant": "thecapybara",
+      "participant_url": "https://www.codabench.org/profiles/user/thecapybara/",
+      "rank": 23,
+      "scores": {
+        "accuracy": "0.48",
+        "macro_f1": "0.33",
+        "macro_precision": "0.34",
+        "macro_recall": "0.34",
+        "quadratic_weighted_kappa": "0.35"
+      },
+      "submission_id": 827085,
+      "submitted_at": "2026-07-04T07:38:52.120237Z"
     },
     {
       "organization": null,
@@ -520,7 +520,7 @@
       "submitted_at": "2026-06-27T22:45:13.043347Z"
     }
   ],
-  "fetched_at": "2026-07-04T10:28:45+00:00",
+  "fetched_at": "2026-07-05T10:30:47+00:00",
   "phase_id": 27428,
   "source": "https://www.codabench.org/competitions/16752/#/results-tab",
   "title": "Results",
