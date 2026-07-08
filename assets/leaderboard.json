@@ -164,8 +164,8 @@
         "macro_recall": "0.42",
         "quadratic_weighted_kappa": "0.36"
       },
-      "submission_id": 801391,
-      "submitted_at": "2026-06-17T15:08:02.834178Z"
+      "submission_id": 831123,
+      "submitted_at": "2026-07-07T02:11:58.243808Z"
     },
     {
       "organization": null,
@@ -431,13 +431,13 @@
       "rank": 25,
       "scores": {
         "accuracy": "0.47",
-        "macro_f1": "0.33",
-        "macro_precision": "0.35",
-        "macro_recall": "0.33",
-        "quadratic_weighted_kappa": "0.33"
+        "macro_f1": "0.31",
+        "macro_precision": "0.34",
+        "macro_recall": "0.32",
+        "quadratic_weighted_kappa": "0.3"
       },
-      "submission_id": 830991,
-      "submitted_at": "2026-07-06T22:51:12.004977Z"
+      "submission_id": 832918,
+      "submitted_at": "2026-07-07T21:58:35.127508Z"
     },
     {
       "organization": null,
@@ -458,9 +458,25 @@
     {
       "organization": null,
       "organization_url": null,
+      "participant": "yirand",
+      "participant_url": "https://www.codabench.org/profiles/user/yirand/",
+      "rank": 27,
+      "scores": {
+        "accuracy": "0.48",
+        "macro_f1": "0.3",
+        "macro_precision": "0.3",
+        "macro_recall": "0.33",
+        "quadratic_weighted_kappa": "0.2"
+      },
+      "submission_id": 832937,
+      "submitted_at": "2026-07-07T22:47:32.295676Z"
+    },
+    {
+      "organization": null,
+      "organization_url": null,
       "participant": "venkateshshukla",
       "participant_url": "https://www.codabench.org/profiles/user/venkateshshukla/",
-      "rank": 27,
+      "rank": 28,
       "scores": {
         "accuracy": "0.34",
         "macro_f1": "0.26",
@@ -470,22 +486,6 @@
       },
       "submission_id": 829342,
       "submitted_at": "2026-07-06T03:42:24.592787Z"
-    },
-    {
-      "organization": null,
-      "organization_url": null,
-      "participant": "yirand",
-      "participant_url": "https://www.codabench.org/profiles/user/yirand/",
-      "rank": 28,
-      "scores": {
-        "accuracy": "0.27",
-        "macro_f1": "0.24",
-        "macro_precision": "0.27",
-        "macro_recall": "0.29",
-        "quadratic_weighted_kappa": "0.04"
-      },
-      "submission_id": 829012,
-      "submitted_at": "2026-07-05T17:41:56.719954Z"
     },
     {
       "organization": null,
@@ -520,7 +520,7 @@
       "submitted_at": "2026-06-23T09:14:28.978825Z"
     }
   ],
-  "fetched_at": "2026-07-07T11:20:35+00:00",
+  "fetched_at": "2026-07-08T10:31:52+00:00",
   "phase_id": 27428,
   "source": "https://www.codabench.org/competitions/16752/#/results-tab",
   "title": "Results",
