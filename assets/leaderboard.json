@@ -62,14 +62,14 @@
       "participant_url": "https://www.codabench.org/profiles/user/brady_kinesia/",
       "rank": 2,
       "scores": {
-        "accuracy": "0.51",
+        "accuracy": "0.52",
         "macro_f1": "0.55",
         "macro_precision": "0.63",
-        "macro_recall": "0.53",
-        "quadratic_weighted_kappa": "0.39"
+        "macro_recall": "0.52",
+        "quadratic_weighted_kappa": "0.38"
       },
-      "submission_id": 837570,
-      "submitted_at": "2026-07-10T02:57:13.927484Z"
+      "submission_id": 851291,
+      "submitted_at": "2026-07-16T01:24:02.417518Z"
     },
     {
       "organization": null,
@@ -94,14 +94,14 @@
       "participant_url": "https://www.codabench.org/profiles/user/anhnamxtanh/",
       "rank": 4,
       "scores": {
-        "accuracy": "0.5",
+        "accuracy": "0.51",
         "macro_f1": "0.54",
-        "macro_precision": "0.58",
-        "macro_recall": "0.51",
+        "macro_precision": "0.59",
+        "macro_recall": "0.52",
         "quadratic_weighted_kappa": "0.4"
       },
-      "submission_id": 820320,
-      "submitted_at": "2026-06-30T04:46:27.383127Z"
+      "submission_id": 859107,
+      "submitted_at": "2026-07-23T04:36:52.758322Z"
     },
     {
       "organization": null,
@@ -110,14 +110,14 @@
       "participant_url": "https://www.codabench.org/profiles/user/soojie_kim/",
       "rank": 5,
       "scores": {
-        "accuracy": "0.53",
+        "accuracy": "0.54",
         "macro_f1": "0.53",
-        "macro_precision": "0.54",
+        "macro_precision": "0.55",
         "macro_recall": "0.53",
-        "quadratic_weighted_kappa": "0.37"
+        "quadratic_weighted_kappa": "0.39"
       },
-      "submission_id": 856149,
-      "submitted_at": "2026-07-21T01:47:43.592266Z"
+      "submission_id": 858927,
+      "submitted_at": "2026-07-23T00:15:21.025275Z"
     },
     {
       "organization": null,
@@ -126,14 +126,14 @@
       "participant_url": "https://www.codabench.org/profiles/user/hpc_vnpt/",
       "rank": 6,
       "scores": {
-        "accuracy": "0.49",
+        "accuracy": "0.5",
         "macro_f1": "0.52",
-        "macro_precision": "0.55",
+        "macro_precision": "0.59",
         "macro_recall": "0.5",
-        "quadratic_weighted_kappa": "0.38"
+        "quadratic_weighted_kappa": "0.36"
       },
-      "submission_id": 808536,
-      "submitted_at": "2026-06-22T13:46:47.448750Z"
+      "submission_id": 858809,
+      "submitted_at": "2026-07-22T20:34:55.163512Z"
     },
     {
       "organization": null,
@@ -362,9 +362,25 @@
     {
       "organization": null,
       "organization_url": null,
+      "participant": "sifat371",
+      "participant_url": "https://www.codabench.org/profiles/user/sifat371/",
+      "rank": 21,
+      "scores": {
+        "accuracy": "0.42",
+        "macro_f1": "0.42",
+        "macro_precision": "0.51",
+        "macro_recall": "0.39",
+        "quadratic_weighted_kappa": "0.32"
+      },
+      "submission_id": 858465,
+      "submitted_at": "2026-07-22T14:27:00.138973Z"
+    },
+    {
+      "organization": null,
+      "organization_url": null,
       "participant": "hadianoorikram",
       "participant_url": "https://www.codabench.org/profiles/user/hadianoorikram/",
-      "rank": 21,
+      "rank": 22,
       "scores": {
         "accuracy": "0.42",
         "macro_f1": "0.4",
@@ -380,7 +396,7 @@
       "organization_url": null,
       "participant": "Soju \u00d7 Beer",
       "participant_url": "https://www.codabench.org/profiles/user/jjunsss/",
-      "rank": 22,
+      "rank": 23,
       "scores": {
         "accuracy": "0.48",
         "macro_f1": "0.4",
@@ -396,7 +412,7 @@
       "organization_url": null,
       "participant": "mikedog",
       "participant_url": "https://www.codabench.org/profiles/user/mikedog/",
-      "rank": 23,
+      "rank": 24,
       "scores": {
         "accuracy": "0.5",
         "macro_f1": "0.39",
@@ -406,22 +422,6 @@
       },
       "submission_id": 853969,
       "submitted_at": "2026-07-18T14:10:55.863231Z"
-    },
-    {
-      "organization": null,
-      "organization_url": null,
-      "participant": "kingkung",
-      "participant_url": "https://www.codabench.org/profiles/user/kingkung/",
-      "rank": 24,
-      "scores": {
-        "accuracy": "0.44",
-        "macro_f1": "0.38",
-        "macro_precision": "0.4",
-        "macro_recall": "0.4",
-        "quadratic_weighted_kappa": "0.25"
-      },
-      "submission_id": 857405,
-      "submitted_at": "2026-07-22T00:40:08.672110Z"
     },
     {
       "organization": null,
@@ -490,9 +490,25 @@
     {
       "organization": null,
       "organization_url": null,
+      "participant": "seantang",
+      "participant_url": "https://www.codabench.org/profiles/user/seantang/",
+      "rank": 29,
+      "scores": {
+        "accuracy": "0.42",
+        "macro_f1": "0.37",
+        "macro_precision": "0.42",
+        "macro_recall": "0.35",
+        "quadratic_weighted_kappa": "0.35"
+      },
+      "submission_id": 858582,
+      "submitted_at": "2026-07-22T15:40:22.812780Z"
+    },
+    {
+      "organization": null,
+      "organization_url": null,
       "participant": "gwh6669999",
       "participant_url": "https://www.codabench.org/profiles/user/gwh6669999/",
-      "rank": 29,
+      "rank": 30,
       "scores": {
         "accuracy": "0.52",
         "macro_f1": "0.37",
@@ -502,22 +518,6 @@
       },
       "submission_id": 807070,
       "submitted_at": "2026-06-21T17:11:16.138342Z"
-    },
-    {
-      "organization": null,
-      "organization_url": null,
-      "participant": "seantang",
-      "participant_url": "https://www.codabench.org/profiles/user/seantang/",
-      "rank": 30,
-      "scores": {
-        "accuracy": "0.41",
-        "macro_f1": "0.37",
-        "macro_precision": "0.56",
-        "macro_recall": "0.34",
-        "quadratic_weighted_kappa": "0.3"
-      },
-      "submission_id": 853893,
-      "submitted_at": "2026-07-18T11:50:48.433236Z"
     },
     {
       "organization": null,
@@ -538,9 +538,25 @@
     {
       "organization": null,
       "organization_url": null,
+      "participant": "kingkung",
+      "participant_url": "https://www.codabench.org/profiles/user/kingkung/",
+      "rank": 32,
+      "scores": {
+        "accuracy": "0.43",
+        "macro_f1": "0.36",
+        "macro_precision": "0.38",
+        "macro_recall": "0.35",
+        "quadratic_weighted_kappa": "0.29"
+      },
+      "submission_id": 859075,
+      "submitted_at": "2026-07-23T03:45:47.823680Z"
+    },
+    {
+      "organization": null,
+      "organization_url": null,
       "participant": "willpoop",
       "participant_url": "https://www.codabench.org/profiles/user/willpoop/",
-      "rank": 32,
+      "rank": 33,
       "scores": {
         "accuracy": "0.43",
         "macro_f1": "0.36",
@@ -556,7 +572,7 @@
       "organization_url": null,
       "participant": "godhj",
       "participant_url": "https://www.codabench.org/profiles/user/godhj/",
-      "rank": 33,
+      "rank": 34,
       "scores": {
         "accuracy": "0.47",
         "macro_f1": "0.35",
@@ -566,22 +582,6 @@
       },
       "submission_id": 853606,
       "submitted_at": "2026-07-18T04:19:10.431764Z"
-    },
-    {
-      "organization": null,
-      "organization_url": null,
-      "participant": "sifat371",
-      "participant_url": "https://www.codabench.org/profiles/user/sifat371/",
-      "rank": 34,
-      "scores": {
-        "accuracy": "0.5",
-        "macro_f1": "0.34",
-        "macro_precision": "0.36",
-        "macro_recall": "0.37",
-        "quadratic_weighted_kappa": "0.32"
-      },
-      "submission_id": 816275,
-      "submitted_at": "2026-06-27T18:59:22.777339Z"
     },
     {
       "organization": null,
@@ -714,9 +714,25 @@
     {
       "organization": null,
       "organization_url": null,
+      "participant": "euler786",
+      "participant_url": "https://www.codabench.org/profiles/user/euler786/",
+      "rank": 43,
+      "scores": {
+        "accuracy": "0.34",
+        "macro_f1": "0.26",
+        "macro_precision": "0.39",
+        "macro_recall": "0.4",
+        "quadratic_weighted_kappa": "0.15"
+      },
+      "submission_id": 858392,
+      "submitted_at": "2026-07-22T13:55:39.889035Z"
+    },
+    {
+      "organization": null,
+      "organization_url": null,
       "participant": "venkateshshukla",
       "participant_url": "https://www.codabench.org/profiles/user/venkateshshukla/",
-      "rank": 43,
+      "rank": 44,
       "scores": {
         "accuracy": "0.34",
         "macro_f1": "0.26",
@@ -732,7 +748,7 @@
       "organization_url": null,
       "participant": "biomac",
       "participant_url": "https://www.codabench.org/profiles/user/biomac/",
-      "rank": 44,
+      "rank": 45,
       "scores": {
         "accuracy": "0.43",
         "macro_f1": "0.15",
@@ -742,22 +758,6 @@
       },
       "submission_id": 822299,
       "submitted_at": "2026-07-01T06:59:27.096615Z"
-    },
-    {
-      "organization": null,
-      "organization_url": null,
-      "participant": "euler786",
-      "participant_url": "https://www.codabench.org/profiles/user/euler786/",
-      "rank": 45,
-      "scores": {
-        "accuracy": "0.32",
-        "macro_f1": "0.12",
-        "macro_precision": "0.08",
-        "macro_recall": "0.25",
-        "quadratic_weighted_kappa": "0.0"
-      },
-      "submission_id": 856738,
-      "submitted_at": "2026-07-21T11:25:27.827878Z"
     },
     {
       "organization": null,
@@ -776,7 +776,7 @@
       "submitted_at": "2026-06-23T09:14:28.978825Z"
     }
   ],
-  "fetched_at": "2026-07-22T10:35:13+00:00",
+  "fetched_at": "2026-07-23T10:36:06+00:00",
   "phase_id": 27428,
   "source": "https://www.codabench.org/competitions/16752/#/results-tab",
   "title": "Results",
