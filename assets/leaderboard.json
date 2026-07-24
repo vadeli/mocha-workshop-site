@@ -207,13 +207,13 @@
       "rank": 11,
       "scores": {
         "accuracy": "0.48",
-        "macro_f1": "0.47",
-        "macro_precision": "0.45",
-        "macro_recall": "0.51",
+        "macro_f1": "0.46",
+        "macro_precision": "0.44",
+        "macro_recall": "0.52",
         "quadratic_weighted_kappa": "0.34"
       },
-      "submission_id": 857310,
-      "submitted_at": "2026-07-21T20:46:25.411320Z"
+      "submission_id": 858828,
+      "submitted_at": "2026-07-22T20:53:47.029519Z"
     },
     {
       "organization": null,
@@ -238,14 +238,14 @@
       "participant_url": "https://www.codabench.org/profiles/user/noahreidy/",
       "rank": 13,
       "scores": {
-        "accuracy": "0.51",
+        "accuracy": "0.52",
         "macro_f1": "0.44",
-        "macro_precision": "0.61",
-        "macro_recall": "0.41",
+        "macro_precision": "0.62",
+        "macro_recall": "0.42",
         "quadratic_weighted_kappa": "0.35"
       },
-      "submission_id": 843072,
-      "submitted_at": "2026-07-12T10:57:25.411221Z"
+      "submission_id": 859691,
+      "submitted_at": "2026-07-23T12:10:19.967932Z"
     },
     {
       "organization": null,
@@ -394,7 +394,7 @@
     {
       "organization": null,
       "organization_url": null,
-      "participant": "Soju \u00d7 Beer",
+      "participant": "UVLL - Junsu KIM",
       "participant_url": "https://www.codabench.org/profiles/user/jjunsss/",
       "rank": 23,
       "scores": {
@@ -776,7 +776,7 @@
       "submitted_at": "2026-06-23T09:14:28.978825Z"
     }
   ],
-  "fetched_at": "2026-07-23T10:36:06+00:00",
+  "fetched_at": "2026-07-24T10:30:12+00:00",
   "phase_id": 27428,
   "source": "https://www.codabench.org/competitions/16752/#/results-tab",
   "title": "Results",
