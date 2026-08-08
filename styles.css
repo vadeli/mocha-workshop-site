@@ -1048,13 +1048,19 @@ li {
 }
 
 .person-link {
-  color: inherit;
-  transition: color 180ms ease;
+  color: #5c81c5;
+  font-weight: 900;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
 }
 
 .person-link:hover,
 .person-link:focus-visible {
-  color: #1f6fd1;
+  color: #1557a6;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
 }
 
 .featured-person .person-role {
@@ -1343,4 +1349,8 @@ li {
     font-weight: 800;
     color: var(--ink);
   }
+}
+.small-gap {
+  display: inline-block;
+  width: 0.4rem;
 }
