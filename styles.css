@@ -808,6 +808,117 @@ li {
   border-bottom: 0;
 }
 
+.committee-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  background:
+    linear-gradient(145deg, rgba(255, 250, 242, 0.9), rgba(255, 246, 236, 0.7)),
+    radial-gradient(circle at top right, rgba(47, 127, 118, 0.12), transparent 26%);
+  box-shadow: var(--shadow);
+}
+
+.committee-table-wrap {
+  overflow-x: auto;
+}
+
+.committee-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 6px;
+  table-layout: fixed;
+  min-width: 940px;
+}
+
+.committee-table th:nth-child(1),
+.committee-table td:nth-child(1),
+.committee-table th:nth-child(3),
+.committee-table td:nth-child(3) {
+  width: 20%;
+}
+
+.committee-table th:nth-child(2),
+.committee-table td:nth-child(2) {
+  width: 27%;
+}
+
+.committee-table th:nth-child(4),
+.committee-table td:nth-child(4) {
+  width: 33%;
+}
+
+.committee-table th,
+.committee-table td {
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.committee-table th {
+  padding-top: 0;
+  padding-bottom: 8px;
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.committee-table th:nth-child(3) {
+  padding-left: 22px;
+}
+
+.committee-table tbody tr {
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.committee-table tbody tr:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(31, 42, 37, 0.08);
+}
+
+.committee-table td {
+  background: rgba(255, 252, 247, 0.72);
+  border-top: 1px solid rgba(31, 42, 37, 0.08);
+  border-bottom: 1px solid rgba(31, 42, 37, 0.08);
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.committee-table tbody tr:nth-child(even) td {
+  background: rgba(214, 236, 232, 0.24);
+}
+
+.committee-table td:first-child {
+  border-left: 1px solid rgba(31, 42, 37, 0.08);
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.committee-table td:nth-child(3) {
+  padding-left: 22px;
+  border-left: 1px solid rgba(31, 42, 37, 0.1);
+}
+
+.committee-table td:first-child,
+.committee-table td:nth-child(3) {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.committee-table td:last-child {
+  border-right: 1px solid rgba(31, 42, 37, 0.08);
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.committee-table .committee-empty {
+  color: transparent;
+}
+
 .leaderboard-rank,
 .leaderboard-score {
   font-weight: 900;
