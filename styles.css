@@ -456,6 +456,108 @@ li {
   opacity: 0.7;
 }
 
+.challenge-winners-card {
+  margin: 24px 0 28px;
+  padding: 22px;
+  border: 1px solid rgba(31, 42, 37, 0.1);
+  border-radius: calc(var(--radius) + 4px);
+  background:
+    linear-gradient(145deg, rgba(255, 250, 242, 0.94), rgba(255, 246, 236, 0.78)),
+    radial-gradient(circle at top right, rgba(201, 145, 45, 0.16), transparent 30%);
+  box-shadow: var(--shadow);
+}
+
+.challenge-winners-trophy {
+  margin-right: 8px;
+  font-size: 1.18rem;
+}
+
+.challenge-winners-card .card-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 1rem;
+  color: var(--accent-dark);
+}
+
+.challenge-winners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.challenge-winner {
+  padding: 16px;
+  border: 1px solid rgba(31, 42, 37, 0.08);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 252, 247, 0.78);
+}
+
+.challenge-winner-gold {
+  border-top: 3px solid rgba(201, 145, 45, 0.52);
+}
+
+.challenge-winner-silver {
+  border-top: 3px solid rgba(42, 139, 127, 0.34);
+}
+
+.challenge-winner-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.challenge-winner-medal {
+  font-size: 1.25rem;
+}
+
+.challenge-winner-place {
+  display: inline-flex;
+  margin: 0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(201, 145, 45, 0.16);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.challenge-winner p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.challenge-winner a {
+  color: #126fba;
+  font-weight: 800;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.challenge-winner a:hover,
+.challenge-winner a:focus-visible {
+  color: #0b5a99;
+}
+
+.challenge-results-link {
+  display: inline-flex;
+  margin-top: 16px;
+  color: var(--accent-dark);
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.challenge-results-link:hover,
+.challenge-results-link:focus-visible {
+  color: #126fba;
+}
+
 .spotlight-list,
 .check-list,
 .organizer-card ul {
@@ -1303,6 +1405,7 @@ li {
   .hero,
   .page-intro,
   .two-column,
+  .challenge-winners-grid,
   .topic-grid,
   .people-grid,
   .organizer-grid,
@@ -1364,6 +1467,7 @@ li {
   .hero,
   .page-intro,
   .two-column,
+  .challenge-winners-grid,
   .topic-grid,
   .people-grid,
   .organizer-grid,
