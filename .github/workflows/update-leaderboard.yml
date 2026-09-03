@@ -1,8 +1,6 @@
 name: Update leaderboard data
 
 on:
-  schedule:
-    - cron: "20 8 * * *"
   workflow_dispatch:
 
 permissions:
